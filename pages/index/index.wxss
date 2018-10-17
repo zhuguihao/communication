@@ -1,0 +1,20 @@
+/**index.wxss**/
+.moveList{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.listScroll{
+  width: 40rpx;
+  height: 40rpx;
+  padding: 10rpx;
+  font-size: 15rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+.listScroll:active{
+  background-color:#ccc;
+}
+.listScroll:hover{
+  background-color:#ccc;
+}
