@@ -171,14 +171,21 @@ Page({
         "addressCity": "联系地址城市",
         "addressStreet": "联系地址街道"
       }]
-    }]
+    }],
+    /**
+     * 屏幕高度
+     */
+    winHeight:null,
   },
   onLoad(){
-    // wx.chooseLocation({
-    //   success: function(res) {
-    //     console.log(res)
-    //   },
-    // })
+    let vm = this
+    wx.getSystemInfo({
+      success: function(res) {
+        vm.setData({
+          winHeight: res.windowHeight
+        })
+      },
+    })
   },
   scroll: function (e) {
     console.log(e)
@@ -187,34 +194,6 @@ Page({
     console.log(e.target.dataset.contact.code)
     this.setData({
       toView: e.target.dataset.contact.code
-    })
-  },
-  tap: function (e) {
-    let index = this.data.toViewIndex
-    if (this.data.toViewIndex >= this.data.contacts.length-1){
-      index = 0
-    }else{
-      index++
-    }
-    console.log(index)
-    this.setData({
-      toView: this.data.contacts[index].code,
-      toViewIndex: index
-    })
-    // let contacts = this.data
-    // for (var i = 0; i < contacts.length; ++i) {
-    //   if (contacts[i].code === this.data.toView) {
-    //     this.setData({
-    //       toView: contacts[i + 1].code
-    //     })
-    //     console.log(this.data.toView)
-    //     break
-    //   }
-    // }
-  },
-  tapMove: function (e) {
-    this.setData({
-      scrollTop: this.data.scrollTop + 10
     })
   }
 })
