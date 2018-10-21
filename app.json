@@ -1,12 +1,14 @@
 {
-  "pages":[
+  "pages": [
+    "pages/selection/selection",
     "pages/index/index",
+    "pages/companySelect/companySelect",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "通讯录",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }

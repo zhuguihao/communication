@@ -1,0 +1,4 @@
+<block>
+  <button bindtap='companySelect'>公司</button>
+  <button>个人</button>
+</block>

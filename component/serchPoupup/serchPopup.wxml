@@ -1,0 +1,3 @@
+<!--component/serchPopup.wxml-->
+<text>{{innerText}}</text>
+<slot></slot>

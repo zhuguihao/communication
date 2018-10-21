@@ -4,6 +4,7 @@
   top: 0;
   right: 0;
 }
+
 .listScroll{
   width: 40rpx;
   height: 40rpx;
@@ -12,9 +13,15 @@
   line-height: 40rpx;
   text-align: center;
 }
-.listScroll:active{
-  background-color:#ccc;
+
+.contactTitle{
+  line-height: 40rpx;
+  background: #ccc;
+  color: #fff;
+  padding: 5rpx;
+  padding-left: 10rpx;
 }
-.listScroll:hover{
-  background-color:#ccc;
+.contactList{
+  margin-left: 10rpx;
+  line-height: 80rpx;
 }
