@@ -1,3 +1,11 @@
 <!--component/serchPopup.wxml-->
-<text>{{innerText}}</text>
-<slot></slot>
+
+<view class='serchBox'>
+  <view>
+    <icon type="search" size="15" class='serchIcon' />
+    <input class='serchInp' placeholder='{{placeholder}}' confirm-type='search' />
+    <text>取消</text>
+  </view>
+  <text>{{innerText}}</text>
+  <slot></slot>
+</view>

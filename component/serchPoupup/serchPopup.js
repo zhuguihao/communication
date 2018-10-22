@@ -8,7 +8,12 @@ Component({
     innerText: {
       type: String,
       value: 'default value',
-    }
+    },
+    //输入框提示语
+    placeholder: {
+      type: String,
+      value: '搜索',
+    },
   },
 
   /**

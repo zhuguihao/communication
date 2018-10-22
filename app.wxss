@@ -1,11 +1,13 @@
 /**app.wxss**/
-.fontSize30{
+
+.fontSize30 {
   font-size: 30rpx;
 }
-.fontSize35{
+
+.fontSize35 {
   font-size: 35rpx;
 }
-.bor_btn{
+
+.bor_btn {
   border-bottom: 1rpx solid #ccc;
 }
-
