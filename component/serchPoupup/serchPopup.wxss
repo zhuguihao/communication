@@ -8,6 +8,18 @@
   height: 100%;
 }
 
+.serchList {
+  display: -webkit-box;
+}
+
+.serchCancel {
+  font-size: 30rpx;
+  color: rgb(12, 151, 231);
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 0 30rpx;
+}
+
 .serchInp {
   background-color: rgb(236, 234, 234);
   border-radius: 15rpx;
@@ -29,5 +41,5 @@
 .serchIcon {
   position: absolute;
   left: 7.5%;
-  margin-top: 25rpx;
+  margin-top: 35rpx;
 }

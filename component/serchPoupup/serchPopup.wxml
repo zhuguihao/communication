@@ -1,10 +1,10 @@
 <!--component/serchPopup.wxml-->
 
 <view class='serchBox'>
-  <view>
+  <view class='serchList'>
     <icon type="search" size="15" class='serchIcon' />
     <input class='serchInp' placeholder='{{placeholder}}' confirm-type='search' />
-    <text>取消</text>
+    <view class='serchCancel'>取消</view>
   </view>
   <text>{{innerText}}</text>
   <slot></slot>
