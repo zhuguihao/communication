@@ -1,11 +1,12 @@
 /**index.wxss**/
-.moveList{
+
+.moveList {
   position: fixed;
   top: 0;
   right: 0;
 }
 
-.listScroll{
+.listScroll {
   width: 40rpx;
   height: 40rpx;
   padding: 10rpx;
@@ -14,14 +15,43 @@
   text-align: center;
 }
 
-.contactTitle{
+.contactTitle {
   line-height: 40rpx;
   background: #ccc;
   color: #fff;
   padding: 5rpx;
   padding-left: 10rpx;
 }
-.contactList{
+
+.contactList {
   margin-left: 10rpx;
   line-height: 80rpx;
+}
+
+.serchList {
+  display: -webkit-box;
+}
+
+.serchInp {
+  background-color: rgb(236, 234, 234);
+  border-radius: 15rpx;
+  padding-left: 60rpx;
+  width: 70%;
+  font-size: 30rpx;
+  margin-left: 5%;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  height: 80rpx;
+}
+
+.serchInp:active {
+  background-color: #ccc;
+  transition-duration: 0.1s;
+  /* animation-duration: 2000ms; */
+}
+
+.serchIcon {
+  position: absolute;
+  left: 7.5%;
+  margin-top: 35rpx;
 }

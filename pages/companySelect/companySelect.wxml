@@ -18,5 +18,6 @@
 <view>
   <button bindtap='showPopup'>显示搜索窗口</button>
 </view>
+<icon-input disabled bindtap='showPopup'></icon-input>
 
 <serch-poupup bind:serch="serch" show="{{showSerchPopup}}" inner-text="{{innerText}}"></serch-poupup>

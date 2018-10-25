@@ -1,4 +1,0 @@
-<view class='serchList'>
-    <icon type="search" size="15" class='serchIcon' />
-    <input class='serchInp' placeholder='{{placeholder}}' confirm-type='search' bindinput='bindSerch' style='width: {{width}};' disabled='{{disabled}}'/>
-  </view>

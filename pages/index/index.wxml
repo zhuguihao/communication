@@ -1,17 +1,15 @@
-<view>
-  <icon-input disabled bindtap='showPopup'></icon-input>
-  <serch-poupup bind:serch="serch" show="{{showSerchPopup}}" inner-text="{{innerText}}"></serch-poupup>
+<view class='serchList'>
+  <icon type="search" size="15" class='serchIcon' />
+  <input class='serchInp' placeholder='搜索' disabled bindtap='showPopup' />
 </view>
 <view>
-  <scroll-view scroll-into-view="{{toView}}"
-    scroll-y style="height:{{winHeight}}px"
-    scroll-with-animation="true">
+  <scroll-view scroll-into-view="{{toView}}" scroll-y style="height:{{winHeight}}px" scroll-with-animation="true">
     <block wx:for="{{contacts}}" wx:for-item="contact" wx:for-index="contactIndex" wx:key="contact.code">
       <view id="{{contact.code}}">
         <view class='fontSize35 contactTitle'>{{contact.code}}</view>
-        <block wx:for="{{contact.list}}" wx:for-item="item" wx:for-index="itemIndex" wx:key="itemIndex" >
+        <block wx:for="{{contact.list}}" wx:for-item="item" wx:for-index="itemIndex" wx:key="itemIndex">
           <view class="{{contact.list.length-1==itemIndex?'':'bor_btn'}} fontSize30  contactList">{{item.firstName===''?item.phone:item.firstName}}</view>
-              <!-- <view class='fontSize30 bor_btn'>{{item.phone}}</view>
+          <!-- <view class='fontSize30 bor_btn'>{{item.phone}}</view>
               <view class='fontSize30 bor_btn'>{{item.nickName}}</view>
               <view class='fontSize30 bor_btn'>{{item.lastName}}</view>
               <view class='fontSize30 bor_btn'>{{item.middleName}}</view>
@@ -28,4 +26,7 @@
   <block wx:for="{{contacts}}" wx:for-item="contact" wx:for-index="contactIndex" wx:key="contact.code">
     <view class="listScroll" bindtap='listScroll' data-contact='{{contact.code}}' bind>{{contact.code}}</view>
   </block>
+</view>
+<view>
+  <serch-poupup bind:serch="serch" show="{{showSerchPopup}}" inner-text="{{innerText}}"></serch-poupup>
 </view>

@@ -3,7 +3,7 @@
 <view class='serchBox' wx:if="{{show}}">
   <view class='serchList'>
     <icon type="search" size="15" class='serchIcon' />
-    <input class='serchInp' placeholder='{{placeholder}}' confirm-type='search' bindinput='bindSerch'/>
+    <input class='serchInp' disabled='{{false}}' placeholder='{{placeholder}}' confirm-type='search' bindinput='bindSerch'/>
     <view class='serchCancel' bindtap='calcel'>取消</view>
   </view>
   <text>{{innerText}}</text>
