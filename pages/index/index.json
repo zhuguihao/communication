@@ -1,1 +1,6 @@
-{}
+{
+  "usingComponents": {
+    "serch-poupup": "/component/serchPoupup/serchPopup",
+    "icon-input": "/component/iconInput/iconInput"
+  }
+}

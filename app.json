@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/companySelect/companySelect",
     "pages/selection/selection",
-    "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {

@@ -1,4 +1,8 @@
 <view>
+  <icon-input disabled bindtap='showPopup'></icon-input>
+  <serch-poupup bind:serch="serch" show="{{showSerchPopup}}" inner-text="{{innerText}}"></serch-poupup>
+</view>
+<view>
   <scroll-view scroll-into-view="{{toView}}"
     scroll-y style="height:{{winHeight}}px"
     scroll-with-animation="true">

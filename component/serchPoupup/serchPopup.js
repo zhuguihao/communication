@@ -4,13 +4,16 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    // 这里定义了innerText属性，属性值可以在组件使用时指定
-    innerText: {
-      type: String,
-      value: 'default value',
-    },
     //输入框提示语
     placeholder: {
+      type: String,
+      value: '搜索',
+    },
+    show: {
+      type: Boolean,
+      value: false,
+    },
+    innerText: {
       type: String,
       value: '搜索',
     },
@@ -27,6 +30,15 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    bindSerch(e) {
+      let vm = this
+      vm.triggerEvent("serch", e.detail)
+    },
+    calcel() {
+      let vm = this
+      vm.setData({
+        show: false
+      })
+    }
   }
 })

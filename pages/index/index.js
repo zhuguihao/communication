@@ -31,5 +31,15 @@ Page({
     vm.setData({
       toView: e.target.dataset.contact
     })
+  },
+  /**
+   * 搜索弹窗显示
+   * 20181025
+   * zgh
+   */
+  showPopup() {
+    this.setData({
+      showSerchPopup: true
+    })
   }
 })
