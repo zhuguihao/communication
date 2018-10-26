@@ -14,7 +14,7 @@ Page({
     wx.getSystemInfo({
       success: function(res) {
         vm.setData({
-          winHeight: res.windowHeight
+          winHeight: res.windowHeight-50
         })
       },
     })

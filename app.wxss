@@ -1,5 +1,23 @@
 /**app.wxss**/
 
+/**
+ * 全局属性配置
+ */
+
+page {
+  letter-spacing: 1rpx;
+  margin: 0;
+  padding: 0;
+}
+
+.fontSize15 {
+  font-size: 15rpx;
+}
+
+.fontSize20 {
+  font-size: 20rpx;
+}
+
 .fontSize30 {
   font-size: 30rpx;
 }
@@ -10,4 +28,26 @@
 
 .bor_btn {
   border-bottom: 1rpx solid #ccc;
+}
+
+.webkitBox {
+  display: -webkit-box;
+}
+
+.iconMini {
+  width: 20rpx;
+  height: 20rpx;
+  display: block;
+}
+
+.marLeft20 {
+  margin-left: 20rpx;
+}
+
+.marTop {
+  margin-top: 7rpx;
+}
+
+.fontWight500 {
+  font-weight: 500;
 }

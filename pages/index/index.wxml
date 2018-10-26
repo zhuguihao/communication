@@ -8,15 +8,41 @@
       <view id="{{contact.code}}">
         <view class='fontSize35 contactTitle'>{{contact.code}}</view>
         <block wx:for="{{contact.list}}" wx:for-item="item" wx:for-index="itemIndex" wx:key="itemIndex">
-          <view class="{{contact.list.length-1==itemIndex?'':'bor_btn'}} fontSize30  contactList">{{item.firstName===''?item.phone:item.firstName}}</view>
-          <!-- <view class='fontSize30 bor_btn'>{{item.phone}}</view>
-              <view class='fontSize30 bor_btn'>{{item.nickName}}</view>
-              <view class='fontSize30 bor_btn'>{{item.lastName}}</view>
-              <view class='fontSize30 bor_btn'>{{item.middleName}}</view>
-              <view class='fontSize30 bor_btn'>{{item.addressCountry}}</view>
-              <view class='fontSize30 bor_btn'>{{item.addressState}}</view>
-              <view class='fontSize30 bor_btn'>{{item.addressCity}}</view>
-              <view class='fontSize30 bor_btn'>{{item.addressStreet}}</view> -->
+          <view class='contactCardBox'>
+            <view class='contactCardCompany fontWight500'>{{item.cpmpany}}</view>
+            <view class='webkitBox info'>
+              <view class='iconBox'>
+                <image class='icon' src='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLjrfia6XRaOCKGxsTLo5PXm2eGjiawML2y43cyx0bZPvH8oVZKwgyxIcztaNl6ycbQ6HPL2ricjHR8A/132' />
+              </view>
+              <view class='infoBox'>
+                <view class='fontSize30 name'>{{item.firstName==='' && item.middleName===''?item.nickName:item.firstName+item.middleName+item.lastName}}</view>
+                <view class='fontSize20 name'>{{item.position}}</view>
+              </view>
+            </view>
+            <view class='infoDetailBox'>
+              <view class='webkitBox'>
+                <view class='iconMiniBox'>
+                  <image class='iconMini' src='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLjrfia6XRaOCKGxsTLo5PXm2eGjiawML2y43cyx0bZPvH8oVZKwgyxIcztaNl6ycbQ6HPL2ricjHR8A/132' />
+                </view>
+                <view class='fontSize20 marLeft20 marTop fontWight500'>{{item.phone}}</view>
+              </view>
+              <view class='webkitBox'>
+                <view class='iconMiniBox'>
+                  <image class='iconMini' src='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLjrfia6XRaOCKGxsTLo5PXm2eGjiawML2y43cyx0bZPvH8oVZKwgyxIcztaNl6ycbQ6HPL2ricjHR8A/132' />
+                </view>
+                <view class='fontSize20 marLeft20 marTop'>{{item.email}}</view>
+              </view>
+              <view class='webkitBox'>
+                <view class='iconMiniBox'>
+                  <image class='iconMini' src='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLjrfia6XRaOCKGxsTLo5PXm2eGjiawML2y43cyx0bZPvH8oVZKwgyxIcztaNl6ycbQ6HPL2ricjHR8A/132' />
+                </view>
+                <view class='address webkitBox'>
+                  <view class='fontSize20 marLeft20 marTop'>{{item.addressCountry}}/{{item.addressState}}/{{item.addressCity}}</view>
+                  <view class='fontSize15 addressStreet'>{{item.addressStreet}}</view>
+                </view>
+              </view>
+            </view>
+          </view>
         </block>
       </view>
     </block>

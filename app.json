@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/companySelect/companySelect",
     "pages/selection/selection",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/contactSerch/contactSerch"
   ],
   "window": {
     "backgroundTextStyle": "light",

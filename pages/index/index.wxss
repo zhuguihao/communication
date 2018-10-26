@@ -2,14 +2,14 @@
 
 .moveList {
   position: fixed;
-  top: 0;
+  top: 50px;
   right: 0;
 }
 
 .listScroll {
   width: 40rpx;
   height: 40rpx;
-  padding: 10rpx;
+  /* padding: 5rpx; */
   font-size: 15rpx;
   line-height: 40rpx;
   text-align: center;
@@ -30,18 +30,19 @@
 
 .serchList {
   display: -webkit-box;
+  width: 90%;
 }
 
 .serchInp {
   background-color: rgb(236, 234, 234);
   border-radius: 15rpx;
   padding-left: 60rpx;
-  width: 70%;
+  width: 90%;
   font-size: 30rpx;
   margin-left: 5%;
-  margin-top: 10rpx;
-  margin-bottom: 10rpx;
-  height: 80rpx;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 40px;
 }
 
 .serchInp:active {
@@ -53,5 +54,58 @@
 .serchIcon {
   position: absolute;
   left: 7.5%;
+  margin-top: 35rpx;
+}
+
+.contactCardBox {
+  /* height: 200rpx; */
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+  width: 90%;
+  margin: 20rpx 5%;
+  box-shadow: 0 0 10rpx #ccc;
+}
+
+.contactCardCompany {
+  font-size: 20rpx;
+  text-align: right;
+  margin: 20rpx 40rpx 0 0;
+  height:20rpx;
+}
+
+.iconBox {
+  width: 65rpx;
+  margin: 10rpx 0 0 12%;
+}
+
+.icon {
+  border-radius: 50%;
+  box-shadow: 0 0 10rpx #ccc;
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.infoBox {
+  margin: 10rpx 0 0 20rpx;
+}
+
+.infoDetailBox {
+  margin-left: 17%;
+  margin-bottom: 50rpx;
+}
+
+.iconMiniBox {
+  margin-top: 10rpx;
+}
+
+.address {
+  width: 80%;
+}
+
+.addressStreet {
+  margin-top: 13rpx;
+}
+
+.info{
   margin-top: 35rpx;
 }

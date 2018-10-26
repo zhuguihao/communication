@@ -1,14 +1,17 @@
 const contacts = [{
   "code": "H", "list": [{
-    "firstName": "名字",
+    "firstName": "朱",
     "phone": "15057526152",
     "nickName": "昵称",
-    "lastName": "姓氏",
-    "middleName": "中间名",
-    "addressCountry": "联系地址国家",
-    "addressState": "联系地址省份",
-    "addressCity": "联系地址城市",
-    "addressStreet": "联系地址街道"
+    "lastName": "豪",
+    "middleName": "贵",
+    "addressCountry": "中国",
+    "addressState": "广东省",
+    "addressCity": "深圳市",
+    "addressStreet": "车公庙210栋7F02",
+    "email": "zhuguihao@163.com",
+    "position":"计算机/IT/软件开发 技术总监",
+    "cpmpany":"深圳市豪气万丈有限公司",
   }, {
     "firstName": "名字",
     "phone": "15057526152",
@@ -18,7 +21,7 @@ const contacts = [{
     "addressCountry": "联系地址国家",
     "addressState": "联系地址省份",
     "addressCity": "联系地址城市",
-    "addressStreet": "联系地址街道"
+    "addressStreet": "联系地址街道 在哪里呢的啊"
   }, {
     "firstName": "名字",
     "phone": "15057526152",
