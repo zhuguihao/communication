@@ -1,0 +1,4 @@
+<image wx:if="{{iconType==='address'}}" src='/static/icon/address.png' class='icon'/>
+<image wx:elif="{{iconType==='phone'}}" src='/static/icon/phone.png' class='icon'/>
+<image wx:elif="{{iconType==='email'}}" src='/static/icon/email.png' class='icon'/>
+<image wx:elif="{{iconType==='left'}}" src='/static/icon/left.png' class='icon'/>

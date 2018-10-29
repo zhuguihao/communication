@@ -34,12 +34,6 @@ page {
   display: -webkit-box;
 }
 
-.iconMini {
-  width: 20rpx;
-  height: 20rpx;
-  display: block;
-}
-
 .marLeft20 {
   margin-left: 20rpx;
 }

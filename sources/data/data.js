@@ -21,7 +21,7 @@ const contacts = [{
     "addressCountry": "联系地址国家",
     "addressState": "联系地址省份",
     "addressCity": "联系地址城市",
-    "addressStreet": "联系地址街道 在哪里呢的啊"
+    "addressStreet": "联系地址街道"
   }, {
     "firstName": "名字",
     "phone": "15057526152",

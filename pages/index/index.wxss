@@ -70,7 +70,7 @@
   font-size: 20rpx;
   text-align: right;
   margin: 20rpx 40rpx 0 0;
-  height:20rpx;
+  height: 20rpx;
 }
 
 .iconBox {
@@ -106,6 +106,6 @@
   margin-top: 13rpx;
 }
 
-.info{
+.info {
   margin-top: 35rpx;
 }

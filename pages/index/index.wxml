@@ -22,19 +22,19 @@
             <view class='infoDetailBox'>
               <view class='webkitBox'>
                 <view class='iconMiniBox'>
-                  <image class='iconMini' src='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLjrfia6XRaOCKGxsTLo5PXm2eGjiawML2y43cyx0bZPvH8oVZKwgyxIcztaNl6ycbQ6HPL2ricjHR8A/132' />
+                  <com-icon icon-type='phone' />
                 </view>
                 <view class='fontSize20 marLeft20 marTop fontWight500'>{{item.phone}}</view>
               </view>
               <view class='webkitBox'>
                 <view class='iconMiniBox'>
-                  <image class='iconMini' src='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLjrfia6XRaOCKGxsTLo5PXm2eGjiawML2y43cyx0bZPvH8oVZKwgyxIcztaNl6ycbQ6HPL2ricjHR8A/132' />
+                  <com-icon icon-type='email' />
                 </view>
                 <view class='fontSize20 marLeft20 marTop'>{{item.email}}</view>
               </view>
               <view class='webkitBox'>
                 <view class='iconMiniBox'>
-                  <image class='iconMini' src='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLjrfia6XRaOCKGxsTLo5PXm2eGjiawML2y43cyx0bZPvH8oVZKwgyxIcztaNl6ycbQ6HPL2ricjHR8A/132' />
+                  <com-icon icon-type='address' />
                 </view>
                 <view class='address webkitBox'>
                   <view class='fontSize20 marLeft20 marTop'>{{item.addressCountry}}/{{item.addressState}}/{{item.addressCity}}</view>
